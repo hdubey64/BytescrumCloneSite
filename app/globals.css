@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 0%;
+  --foreground: 0 0% 100%;
+  --primary: 0 0% 0%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 0 0% 100%;
+  --secondary-foreground: 0 0% 0%;
+  --accent-blue: 210 100% 50%;
+  --accent-pink: 330 100% 60%;
+  --accent-gray: 220 10% 60%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r;
+}
+
+.service-card {
+  @apply border border-gray-800 rounded-lg p-6 transition-all duration-300 hover:border-gray-600;
+}
+
+.section-title {
+  @apply text-3xl md:text-4xl font-bold mb-6;
+}
+
+.section-subtitle {
+  @apply text-xl md:text-2xl font-semibold mb-4;
+}
+
+.content-container {
+  @apply container mx-auto px-4 py-24 pt-32;
+}
+
